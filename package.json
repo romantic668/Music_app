@@ -1,5 +1,5 @@
 {
-  "name": "music app",
+  "name": "musicapp",
   "version": "1.0.0",
   "description": "Adding a backend to Music App",
   "main": "app.js",
