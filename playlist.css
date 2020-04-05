@@ -1,0 +1,309 @@
+body {
+	background-color: rgba(228, 96, 228, 0.29);
+	padding-top: 80px;
+	position:relative;
+	
+}
+
+h4{
+	position: absolute;
+	float: left;
+    top: 30%;
+    left: 35%;
+    color: purple;
+    
+ }
+
+div.listitle{
+ 	color: purple;
+ 	font-size: 2em;
+ 	margin-left: 0.5em;
+ }
+
+.userbutton{
+ 	margin-left: 1em;
+ 	margin-top:.5em
+ }
+
+ .titlebutton{
+ 	display: flex;
+ }
+
+ .los>.music>h4, #songs>.songs>h4, #search>.songs>h4{
+ 	top: 10%;
+ 	left: 25%;
+ 	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+ }
+
+  .los>.music>p, #songs>.songs>p, #search>.songs>p{
+  	position: relative;
+	clear: both;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top:0px;
+	color: gray;
+  	font-size: 18;
+ 	top: -20%;
+ 	left: 25%;
+ 	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+ }
+
+
+#songs, .playlists, #search {
+    display: none;
+}
+
+.lbutton{
+	display: inline-block;
+	width: 8em;
+	margin: 0em 2em;
+}
+
+div#twobuttons{
+	text-align: center;
+}
+
+
+.active {
+  display: block;
+}
+
+.btn-block { 
+	background-color: rgba(134, 43, 147, 0.8);
+	color: white;
+	border-radius: 5px;
+	border: none;
+	position: relative;
+	padding:0.3em;
+}
+
+.glyphicon {
+	padding: 0.5em;
+	font-size: 1em;
+	
+}
+
+span#Playlist {
+	font-family:  "Helvetica", "Arial", sans-serif;
+	font-size: 16px;
+	position: relative;
+	margin: auto;
+}
+
+#left{
+	position: absolute;
+	left: -2em;
+	top: -40%;
+		
+}
+
+
+.nav {
+  display: flex; /* or inline-flex */
+  justify-content: space-between;
+  padding-top: 0px;
+  border-bottom: solid gray 0.01em;
+
+  
+}
+
+.container {
+	padding: 10px 10px;
+}
+
+span.glyphicon-chevron-right{
+	position: absolute;
+	color: gray;
+	padding:0;
+	zoom:200%;
+	top: 35%;
+    right: 10%;
+    
+}
+
+span.glyphicon-play{
+	position: absolute;
+	color: gray;
+	padding:0;
+	zoom:200%;
+	top: 35%;
+    right: 20%;
+}
+
+span.glyphicon-plus-sign{
+	position: absolute;
+	color: gray;
+	padding:0;
+	zoom:200%;
+	top: 35%;
+    right: 10%;
+}
+
+span.glyphicon.close{
+	position: absolute;
+	color: black;
+	padding:0;
+	
+	top: 30%;
+    right: 5%;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+ul {
+	text-align: center;
+}
+
+ul li span {
+	display: block;
+}
+
+div.music , div.songs , div.userlist{
+	border-bottom: 1px solid gray;
+	padding: 0em;
+	margin: 0em 1em;
+	position: relative;
+	height: 90.67px;
+
+
+	
+}
+
+div.music:active, div.songs:active{
+	background-color: rgba(188, 5, 157, 0.88);
+}
+
+div.music>p , div.songs>p{
+	position: relative;
+	clear: both;
+	padding-left: 120px;
+	padding-right: 120px;
+	padding-top:30px;
+	color: purple;
+	
+	
+}
+
+.icon-size {
+    font-size: 2.2em;
+    color: black;
+    padding: 0em;
+}
+
+.title-text{
+	color: gray;
+}
+
+ul li.active span{
+	color: purple;
+}
+
+div img{
+	float: left;
+	width:60px;
+	height: 60px;
+    transform: translate(25%, 25%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div#last{
+	border-bottom-color: transparent;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #e0c3e0;
+    margin: 15% auto;  
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    top:30%;
+}
+
+.modal-content p{
+	font-size: large;
+	left: 20%;
+	position: relative;
+	width: 50%;
+}
+
+.modal-content h4 {
+    left: 15%;
+}
+
+div.clist, div.userlist{
+	border-bottom: none;
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+                width:100%;
+                display: inline-block;
+                
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border:0px solid #dbdbdb;
+}
+.button {
+                position:relative;
+                float: right;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+	  
+#searchbar{
+	float:left;
+	width: 100%;
+	background-color: #d6c2c2;
+}	  
+
+
+
+
+
+
