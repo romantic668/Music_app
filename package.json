@@ -7,18 +7,14 @@
     "start": "npm install && node app.js"
   },
   "dependencies": {
-    "bcrypt": "^1.0.2",
-    "body-parser": "^1.16.0",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.14.0",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
     "mu2": "^0.5.21",
     "sequelize": "^3.30.2",
     "sequelize-cli": "^2.5.1",
-    "socket.io": "^1.7.3",
-    "sqlite3": "^3.1.8"
-  },
-
-  "engines": {
-    "node": "6.9.5"
+    "socket.io": "^2.3.0",
+    "sqlite3": "^4.1.1"
   }
 }
