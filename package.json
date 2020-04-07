@@ -4,7 +4,8 @@
   "description": "Adding a backend to Music App",
   "main": "app.js",
   "scripts": {
-    "start": "npm install && node app.js"
+    "start": "npm install && node app.js",
+    "dev": "node app.js"
   },
   "dependencies": {
     "bcrypt": "^4.0.1",
