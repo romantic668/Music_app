@@ -1,6 +1,6 @@
 # Music App 
 
-> Music App was a course project built from scratch using vanillaJS, jQuery, Sequelize ORM with Session tokens stored on the server. Socket.io is also added for real time adding and deleting songs.
+> Music App was a course project built from scratch using vanillaJS, css, jQuery, Sequelize ORM with Session tokens stored on the server. Socket.io is also added for real time adding and deleting songs.
 
 ## Available Scripts
 
