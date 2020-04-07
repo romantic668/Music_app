@@ -22,7 +22,7 @@ Go to http://localhost:3000 for access.
 ## Deployment
 
 Deployment of this project can be accessed at [Heroku](https://quiet-gorge-03729.herokuapp.com/)
-username : Foo
-password : 123
-username : Bar
-password: 123
+| username      | password      | 
+| ------------- |:-------------:| 
+| Foo           | 123           | 
+| Bar           | 123           |   
