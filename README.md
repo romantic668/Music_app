@@ -21,7 +21,7 @@ Go to http://localhost:3000 for access.
 
 ## Deployment
 
-Deployment of this project can be accessed at [Heroku](https://quiet-gorge-03729.herokuapp.com/)
+Deployment of this project can be accessed at [Heroku](https://groove-music-app.herokuapp.com/)
 | username      | password      | 
 | ------------- |:-------------:| 
 | Foo           | 123           | 

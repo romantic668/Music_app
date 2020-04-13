@@ -1,181 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Exercise 1</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="playlist.css">
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <nav>
-          <ul class="nav navbar-default navbar-fixed-top">
-            <li><a href="#songs"><span class="glyphicon glyphicon-music icon-size"></span><span class = "title-text">Library</span></a></li>
-            <li><a href="#album"><span class="glyphicon glyphicon-th-list icon-size"></span><span class = "title-text">Playlists</span></a></li>
-            <li><a href="#search"><span class="glyphicon glyphicon-search icon-size"></span><span class = "title-text">Search</span></a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class = "content" id = "album">
-        
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./logoPic.png">
+  <title>Music App</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="playlist.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul class="nav navbar-default navbar-fixed-top">
+          <li><a href="#songs"><span class="glyphicon glyphicon-music icon-size"></span><span
+                class="title-text">Library</span></a></li>
+          <li><a href="#album"><span class="glyphicon glyphicon-th-list icon-size"></span><span
+                class="title-text">Playlists</span></a></li>
+          <li><a href="#search"><span class="glyphicon glyphicon-search icon-size"></span><span
+                class="title-text">Search</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content" id="album">
+
 
       <section class="Playlists hidden">
         <div class="content">
           <div class="col-lg-6">
-          <div class ="music">
-          
-            <img src="gray.png" alt="90's Mega Mix">
-           
-            <h4>90's Mega Mix</h4>
+            <div class="music">
+
+              <img src="gray.png" alt="90's Mega Mix">
+
+              <h4>90's Mega Mix</h4>
 
               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-          </div>
-          <div class="music">  
-            <img src="gray.png" alt="Smooth Jazz">
-            
-            <h4>Smooth Jazz</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-          </div>
-          <div class="music">
-            <img src="gray.png" alt="Electronic">
-            
-            <h4>Electronic</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+            </div>
+            <div class="music">
+              <img src="gray.png" alt="Smooth Jazz">
+
+              <h4>Smooth Jazz</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet
+                fermentum.</p>
+            </div>
+            <div class="music">
+              <img src="gray.png" alt="Electronic">
+
+              <h4>Electronic</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+
+            <div class="music">
+
+              <img src="gray.png" alt="Chill">
+
+              <h4>Chill</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+            </div>
+
+            <div class="music">
+              <img src="gray.png" alt="Studying">
+              <h4>Studying</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet
+                fermentum.</p>
+            </div>
           </div>
 
-          <div class="music">
-            
-            <img src="gray.png" alt="Chill">
-            
-            <h4>Chill</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-          </div>
+          <div class="col-lg-6">
+            <div class="music">
+              <img src="gray.png" alt="2000's Mix">
+              <h4>2000's Mix</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
 
-          <div class="music"> 
-            <img src="gray.png" alt="Studying">
-            <h4>Studying</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-          </div>
-          </div>
+            <div class="music">
+              <img src="gray.png" alt="Favs">
+              <h4>Favs</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
 
-          <div class = "col-lg-6">
-          <div class="music"> 
-            <img src="gray.png" alt="2000's Mix">
-            <h4>2000's Mix</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          </div>
+            <div class="music">
+              <img src="gray.png" alt="Relaxing Poolside">
+              <h4>Relaxing Poolside</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
 
-          <div class="music"> 
-            <img src="gray.png" alt="Favs">
-            <h4>Favs</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          </div>
+            <div class="music">
+              <img src="gray.png" alt="Cooking">
+              <h4>Cooking</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>When you cook, litsen to this.</p>
+            </div>
 
-          <div class="music"> 
-            <img src="gray.png" alt="Relaxing Poolside">
-            <h4>Relaxing Poolside</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          </div>
+            <div class="music">
+              <img src="gray.png" alt="Sports">
+              <h4>Sports</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>Music for sports is awesome.</p>
+            </div>
 
-          <div class="music"> 
-            <img src="gray.png" alt="Cooking">
-            <h4>Cooking</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>When you cook, litsen to this.</p>
-          </div>
+            <div class="music" id="last">
+              <img src="gray.png" alt="Pop music">
+              <h4>Pop music</h4>
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <p>Pop music is all we got.</p>
 
-          <div class="music"> 
-            <img src="gray.png" alt="Sports">
-            <h4>Sports</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>Music for sports is awesome.</p>
-          </div>
-
-          <div  class="music" id = "last"> 
-            <img src="gray.png" alt="Pop music">
-            <h4>Pop music</h4>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <p>Pop music is all we got.</p>
-
-          </div>
+            </div>
           </div>
         </div>
       </section>
-      </div>
-      <div class = "content" id = "songs">
-        <div id = "twobuttons"><button type="button" class="btn-block button-rounded lbutton" id = "onebutton" aria-label="artist">
-          <span id = "byartist">Sort by artist</span>
-          
+    </div>
+    <div class="content" id="songs">
+      <div id="twobuttons"><button type="button" class="btn-block button-rounded lbutton" id="onebutton"
+          aria-label="artist">
+          <span id="byartist">Sort by artist</span>
+
         </button>
-        <button type="button" class="btn-block button-rounded lbutton" id = "twobutton" aria-label="title">
-          
-          <span id = "bytitle">Sort by title</span>
+        <button type="button" class="btn-block button-rounded lbutton" id="twobutton" aria-label="title">
+
+          <span id="bytitle">Sort by title</span>
         </button></div>
 
-      
-      </div>
-      <div class = "content" id = "search">
-        <form>
-          <input type="text" id = "searchbar" placeholder="Search..." required>
-        </form>
-        </div>
 
-      
-      </div>
+    </div>
+    <div class="content" id="search">
+      <form>
+        <input type="text" id="searchbar" placeholder="Search..." required>
+      </form>
     </div>
 
 
-    <div id="myModal" class="modal">
+  </div>
+  </div>
 
-      
-      <div class="modal-content" id = "plstmodal">
-        <span class="close">&times;</span>
-        <p>Choose playlist</p>
-        <div class="music clist" id = "90l"> 
-            
-            <h4>90's Mega Mix</h4>
-            
-          </div>
-          <div class="music clist" id = "workl"> 
-            
-            <h4>Workout Tracks</h4>
-            
-          </div>
-          <div class="music clist" id = "daftl"> 
-            
-            <h4>Daft Punk mix</h4>
-            
-          </div>
+
+  <div id="myModal" class="modal">
+
+
+    <div class="modal-content" id="plstmodal">
+      <span class="close">&times;</span>
+      <p>Choose playlist</p>
+      <div class="music clist" id="90l">
+
+        <h4>90's Mega Mix</h4>
+
       </div>
+      <div class="music clist" id="workl">
+
+        <h4>Workout Tracks</h4>
+
+      </div>
+      <div class="music clist" id="daftl">
+
+        <h4>Daft Punk mix</h4>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="userModal" class="modal">
+
+
+    <div class="modal-content" id='usertitle'>
+      <span class="close" id="userclose">&times;</span>
+      <p>Choose user</p>
 
     </div>
 
-    <div id="userModal" class="modal">
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="mustache.js"></script>
+  <script src="music-app.js"></script>
+</body>
 
-      
-      <div class="modal-content" id = 'usertitle'>
-        <span class="close" id = "userclose">&times;</span>
-        <p >Choose user</p>
-        
-      </div>
-
-    </div>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="mustache.js"></script>
-    <script src="music-app.js"></script>
-  </body>
 </html>
