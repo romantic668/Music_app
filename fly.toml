@@ -1,42 +1,20 @@
-# fly.toml app configuration file generated for music-app-lin on 2025-08-28T15:12:49-07:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
-app = 'music-app-lin'
-primary_region = 'sea'
+app = "music-app-lin"
+primary_region = "sea"
 
 [build]
 
 [env]
-  NODE_ENV = 'production'
+  NODE_ENV = "production"
 
 [http_service]
   internal_port = 3000
   force_https = true
-  auto_stop_machines = 'stop'
-  auto_start_machines = true
-  min_machines_running = 0
-  processes = ['app']
-
-[[services]]
-  protocol = 'tcp'
-  internal_port = 3000
-
-  [[services.ports]]
-    port = 80
-    handlers = ['http']
-
-  [[services.ports]]
-    port = 443
-    handlers = ['tls', 'http']
-
-  [services.concurrency]
-    type = 'requests'
-    hard_limit = 50
-    soft_limit = 25
+  auto_stop_machines = true      # 🟢 闲置时自动停机
+  auto_start_machines = true     # 🟢 有流量时自动启动
+  min_machines_running = 0       # 🟢 最低可为 0，闲置不收费
+  processes = ["app"]
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
+  memory = "256mb"               # 🟢 建议改 256mb（或最多 512mb）
+  cpu_kind = "shared"
   cpus = 1
